@@ -10,7 +10,12 @@ class SessionsController < ApplicationController
       render json: {
         status: :created,
         logged_in: true,
-        user: user
+        user: {
+          id: user["id"],
+          first_name: user["first_name"],
+          last_name: user["last_name"],
+          email: user["email"]
+        }
       }
     else
       render json: {
@@ -25,7 +30,12 @@ class SessionsController < ApplicationController
       render json: {
         status: :ok,
         message: "Information updated",
-        user: @current_user
+        user: {
+          id: @current_user["id"],
+          first_name: @current_user["first_name"],
+          last_name: @current_user["last_name"],
+          email: @current_user["email"]
+        }
       }
     else
       render json: {
@@ -39,7 +49,12 @@ class SessionsController < ApplicationController
     if @current_user
       render json: {
         logged_in: true,
-        user: @current_user
+        user: {
+          id: @current_user["id"],
+          first_name: @current_user["first_name"],
+          last_name: @current_user["last_name"],
+          email: @current_user["email"]
+        }
       }
     else
       render json: {
