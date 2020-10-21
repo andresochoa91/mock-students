@@ -13,4 +13,16 @@ class CoursesController < ApplicationController
       }
     end
   end
+
+  def show
+    if @current_user && @current_user["role"] == "Student"
+      render json: {
+        course: Course.find(params[:id])
+      }
+    else
+      render json: {
+        status: 500
+      }
+    end
+  end
 end
