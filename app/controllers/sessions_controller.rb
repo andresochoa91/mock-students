@@ -3,7 +3,8 @@ class SessionsController < ApplicationController
   include CurrentUserConcern
 
   def create
-    user = User.find_by(email: params["user"]["email"]).try(:authenticate, params["user"]["password"])
+    user = User.find_by(email: params["user"]["email"])
+      .try(:authenticate, params["user"]["password"])
 
     if user
       session[:user_id] = user.id
@@ -14,7 +15,8 @@ class SessionsController < ApplicationController
           id: user["id"],
           first_name: user["first_name"],
           last_name: user["last_name"],
-          email: user["email"]
+          email: user["email"],
+          role: user["role"]
         }
       }
     else
@@ -34,7 +36,8 @@ class SessionsController < ApplicationController
           id: @current_user["id"],
           first_name: @current_user["first_name"],
           last_name: @current_user["last_name"],
-          email: @current_user["email"]
+          email: @current_user["email"],
+          role: @current_user["role"]
         }
       }
     else
@@ -53,7 +56,8 @@ class SessionsController < ApplicationController
           id: @current_user["id"],
           first_name: @current_user["first_name"],
           last_name: @current_user["last_name"],
-          email: @current_user["email"]
+          email: @current_user["email"],
+          role: @current_user["role"]
         }
       }
     else
