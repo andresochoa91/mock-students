@@ -7,12 +7,12 @@ Rails.application.routes.draw do
   get "/courses/:course_name", to: "courses#show"
   
   get "/courses/:course_name/weeks", to: "weeks#index"
-  get "/courses/:course_name/weeks/:week_name", to: "weeks#show"
+  get "/courses/:course_name/weeks/:week_number", to: "weeks#show"
   
-  get "/courses/:course_name/weeks/:week_name/lesson", to: "lessons#show"
+  get "/courses/:course_name/weeks/:week_number/lesson", to: "lessons#show"
 
-  get "/courses/:course_name/weeks/:week_name/lesson/sources", to: "sources#index"
-  get "/courses/:course_name/weeks/:week_name/lesson/sources/:id", to: "sources#show"
+  get "/courses/:course_name/weeks/:week_number/lesson/sources", to: "sources#index"
+  get "/courses/:course_name/weeks/:week_number/lesson/sources/:id", to: "sources#show"
   
   resources :courses, only: [:index, :show]
   resources :weeks, only: [:index, :show]

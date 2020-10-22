@@ -1,9 +1,9 @@
 class WeeksController < ApplicationController
 
   include CurrentUserConcern
-
-  def index
-    if @current_user
+  
+  def index    
+    if @current_user && ctd_courses.include?(params["course_name"])
       render json: {
         status: :ok,
         weeks: Week.where(course_id: Course.find_by(course_name: params[:course_name]))
@@ -16,7 +16,11 @@ class WeeksController < ApplicationController
   end
 
   def show
-    if @current_user && week_params.course["course_name"] == params[:course_name]
+
+    puts week_params
+
+    if @current_user && week_params.course["course_name"] == params[:course_name] && ctd_courses.include?(params["course_name"])
+
       render json: {
         status: :ok,
         week: {
@@ -38,11 +42,15 @@ class WeeksController < ApplicationController
   private
 
     def week_params
-      Week.find_by(week_name: params["week_name"])
+      Week.find_by(week_name: "#{params["course_name"]}_week_#{(params["week_number"]).to_s}")
     end
 
     def lesson_params
       Lesson.find(week_params["lesson_id"])
+    end
+
+    def ctd_courses
+      ["front_end", "back_end", "full_stack"]
     end
 
 end

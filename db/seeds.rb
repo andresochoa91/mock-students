@@ -150,350 +150,418 @@ courses = Course.create([
 
 weeks = Week.create([
   {
-    week_name: "fe1",
+    week_name: "front_end_week_1",
     lesson_id: 1,
-    course_id: 1  
+    course_id: 1,
+    week_number: 1  
   },
   {
-    week_name: "fe2",
+    week_name: "front_end_week_2",
     lesson_id: 2,
-    course_id: 1  
+    course_id: 1,
+    week_number: 2  
   },
   {
-    week_name: "fe3",
+    week_name: "front_end_week_3",
     lesson_id: 3,
-    course_id: 1  
+    course_id: 1,
+    week_number: 3 
   },
   {
-    week_name: "fe4",
+    week_name: "front_end_week_4",
     lesson_id: 4,
-    course_id: 1  
+    course_id: 1,
+    week_number: 4  
   },
   {
-    week_name: "fe5",
+    week_name: "front_end_week_5",
     lesson_id: 5,
-    course_id: 1  
+    course_id: 1,
+    week_number: 5  
   },
   {
-    week_name: "fe6",
+    week_name: "front_end_week_6",
     lesson_id: 6,
-    course_id: 1  
+    course_id: 1,
+    week_number: 6  
   },
   {
-    week_name: "fe7",
+    week_name: "front_end_week_7",
     lesson_id: 7,
-    course_id: 1  
+    course_id: 1,
+    week_number: 7  
   },
   {
-    week_name: "fe8",
+    week_name: "front_end_week_8",
     lesson_id: 8,
-    course_id: 1  
+    course_id: 1,
+    week_number: 8  
   },
   {
-    week_name: "fe9",
+    week_name: "front_end_week_9",
     lesson_id: 9,
-    course_id: 1  
+    course_id: 1,
+    week_number: 9  
   },
   {
-    week_name: "fe10",
+    week_name: "front_end_week_10",
     lesson_id: 10,
-    course_id: 1
+    course_id: 1,
+    week_number: 10
   },
   {
-    week_name: "fe11",
+    week_name: "front_end_week_11",
     lesson_id: 11,
-    course_id: 1
+    course_id: 1,
+    week_number: 11
   },
   {
-    week_name: "fe12",
+    week_name: "front_end_week_12",
     lesson_id: 12,
-    course_id: 1
+    course_id: 1,
+    week_number: 12
   },
   {
-    week_name: "fe13",
+    week_name: "front_end_week_13",
     lesson_id: 13,
-    course_id: 1
+    course_id: 1,
+    week_number: 13
   },
   {
-    week_name: "fe14",
+    week_name: "front_end_week_14",
     lesson_id: 14,
-    course_id: 1
+    course_id: 1,
+    week_number: 14
   },
   {
-    week_name: "fe15",
+    week_name: "front_end_week_15",
     lesson_id: 15,
-    course_id: 1
+    course_id: 1,
+    week_number: 15
   },
   {
-    week_name: "fe16",
+    week_name: "front_end_week_16",
     lesson_id: 16,
-    course_id: 1
+    course_id: 1,
+    week_number: 16
   },
   {
-    week_name: "fe17",
+    week_name: "front_end_week_17",
     lesson_id: 17,
-    course_id: 1
+    course_id: 1,
+    week_number: 17
   },
   {
-    week_name: "fe18",
+    week_name: "front_end_week_18",
     lesson_id: 18,
-    course_id: 1
+    course_id: 1,
+    week_number: 18
   },
   {
-    week_name: "fe19",
+    week_name: "front_end_week_19",
     lesson_id: 18,
-    course_id: 1
+    course_id: 1,
+    week_number: 19
   },
 
 
 
   {
-    week_name: "be1",
+    week_name: "back_end_week_1",
     lesson_id: 1,
-    course_id: 2   
+    course_id: 2,
+    week_number: 1   
   },
   {
-    week_name: "be2",
+    week_name: "back_end_week_2",
     lesson_id: 2,
-    course_id: 2   
+    course_id: 2,
+    week_number: 2   
   },
   {
-    week_name: "be3",
+    week_name: "back_end_week_3",
     lesson_id: 3,
-    course_id: 2   
+    course_id: 2,
+    week_number: 3   
   },
   {
-    week_name: "be4",
+    week_name: "back_end_week_4",
     lesson_id: 4,
-    course_id: 2   
+    course_id: 2,
+    week_number: 4   
   },
   {
-    week_name: "be5",
+    week_name: "back_end_week_5",
     lesson_id: 5,
-    course_id: 2   
+    course_id: 2,
+    week_number: 5   
   },
   {
-    week_name: "be6",
+    week_name: "back_end_week_6",
     lesson_id: 6,
-    course_id: 2   
+    course_id: 2,
+    week_number: 6   
   },
   {
-    week_name: "be7",
+    week_name: "back_end_week_7",
     lesson_id: 7,
-    course_id: 2   
+    course_id: 2,
+    week_number: 7   
   },
   {
-    week_name: "be8",
+    week_name: "back_end_week_8",
     lesson_id: 8,
-    course_id: 2   
+    course_id: 2,
+    week_number: 8   
   },
   {
-    week_name: "be9",
+    week_name: "back_end_week_9",
     lesson_id: 19,
-    course_id: 2 
+    course_id: 2,
+    week_number: 9 
   },
   {
-    week_name: "be10",
+    week_name: "back_end_week_10",
     lesson_id: 20,
-    course_id: 2 
+    course_id: 2,
+    week_number: 10  
   },
   {
-    week_name: "be11",
+    week_name: "back_end_week_11",
     lesson_id: 21,
-    course_id: 2 
+    course_id: 2,
+    week_number: 11 
   },
   {
-    week_name: "be12",
+    week_name: "back_end_week_12",
     lesson_id: 22,
-    course_id: 2 
+    course_id: 2,
+    week_number: 12 
   },
   {
-    week_name: "be13",
+    week_name: "back_end_week_13",
     lesson_id: 23,
-    course_id: 2 
+    course_id: 2,
+    week_number: 13 
   },
   {
-    week_name: "be14",
+    week_name: "back_end_week_14",
     lesson_id: 24,
-    course_id: 2 
+    course_id: 2,
+    week_number: 14 
   },
   {
-    week_name: "be15",
+    week_name: "back_end_week_15",
     lesson_id: 25,
-    course_id: 2 
+    course_id: 2,
+    week_number: 15 
   },
   {
-    week_name: "be16",
+    week_name: "back_end_week_16",
     lesson_id: 26,
-    course_id: 2 
+    course_id: 2,
+    week_number: 16 
   },
   {
-    week_name: "be17",
+    week_name: "back_end_week_17",
     lesson_id: 27,
-    course_id: 2 
+    course_id: 2,
+    week_number: 17 
   },
   {
-    week_name: "be18",
+    week_name: "back_end_week_18",
     lesson_id: 28,
-    course_id: 2 
+    course_id: 2,
+    week_number: 18 
   },
   {
-    week_name: "be19",
+    week_name: "back_end_week_19",
     lesson_id: 29,
-    course_id: 2 
+    course_id: 2,
+    week_number: 19 
   },
   {
-    week_name: "be20",
+    week_name: "back_end_week_20",
     lesson_id: 30,
-    course_id: 2 
+    course_id: 2,
+    week_number: 20 
   },
   {
-    week_name: "be21",
+    week_name: "back_end_week_21",
     lesson_id: 31,
-    course_id: 2 
+    course_id: 2,
+    week_number: 21 
   },
   {
-    week_name: "be22",
+    week_name: "back_end_week_22",
     lesson_id: 31,
-    course_id: 2 
+    course_id: 2,
+    week_number: 22 
   },
   {
-    week_name: "be23",
+    week_name: "back_end_week_23",
     lesson_id: 31,
-    course_id: 2 
+    course_id: 2,
+    week_number: 23 
   },
 
 
-  
+
   {
-    week_name: "fs1",
+    week_name: "full_stack_week_1",
     lesson_id: 9,
-    course_id: 3   
+    course_id: 3,
+    week_number: 1   
   },
   {
-    week_name: "fs2",
+    week_name: "full_stack_week_2",
     lesson_id: 10,
-    course_id: 3 
+    course_id: 3,
+    week_number: 2 
   },
   {
-    week_name: "fs3",
+    week_name: "full_stack_week_3",
     lesson_id: 11,
-    course_id: 3 
+    course_id: 3,
+    week_number: 3 
   },
   {
-    week_name: "fs4",
+    week_name: "full_stack_week_4",
     lesson_id: 12,
-    course_id: 3 
+    course_id: 3,
+    week_number: 4 
   },
   {
-    week_name: "fs5",
+    week_name: "full_stack_week_5",
     lesson_id: 13,
-    course_id: 3 
+    course_id: 3,
+    week_number: 5 
   },
   {
-    week_name: "fs6",
+    week_name: "full_stack_week_6",
     lesson_id: 14,
-    course_id: 3 
+    course_id: 3,
+    week_number: 6 
   },
   {
-    week_name: "fs7",
+    week_name: "full_stack_week_7",
     lesson_id: 15,
-    course_id: 3 
+    course_id: 3,
+    week_number: 7 
   },
   {
-    week_name: "fs8",
+    week_name: "full_stack_week_8",
     lesson_id: 16,
-    course_id: 3 
+    course_id: 3,
+    week_number: 8 
   },
   {
-    week_name: "fs9",
+    week_name: "full_stack_week_9",
     lesson_id: 17,
-    course_id: 3 
+    course_id: 3,
+    week_number: 9 
   },
   {
-    week_name: "fs10",
+    week_name: "full_stack_week_10",
     lesson_id: 18,
-    course_id: 3 
+    course_id: 3,
+    week_number: 10 
   },
   {
-    week_name: "fs11",
+    week_name: "full_stack_week_11",
     lesson_id: 18,
-    course_id: 3 
+    course_id: 3,
+    week_number: 11 
   },
   {
-    week_name: "fs12",
+    week_name: "full_stack_week_12",
     lesson_id: 19,
-    course_id: 3 
+    course_id: 3,
+    week_number: 12 
   },
   {
-    week_name: "fs13",
+    week_name: "full_stack_week_13",
     lesson_id: 20,
-    course_id: 3 
+    course_id: 3,
+    week_number: 13 
   },
   {
-    week_name: "fs14",
+    week_name: "full_stack_week_14",
     lesson_id: 21,
-    course_id: 3 
+    course_id: 3,
+    week_number: 14 
   },
   {
-    week_name: "fs15",
+    week_name: "full_stack_week_15",
     lesson_id: 22,
-    course_id: 3 
+    course_id: 3,
+    week_number: 15 
   },
   {
-    week_name: "fs16",
+    week_name: "full_stack_week_16",
     lesson_id: 23,
-    course_id: 3 
+    course_id: 3,
+    week_number: 16 
   },
   {
-    week_name: "fs17",
+    week_name: "full_stack_week_17",
     lesson_id: 24,
-    course_id: 3 
+    course_id: 3,
+    week_number: 17 
   },
   {
-    week_name: "fs18",
+    week_name: "full_stack_week_18",
     lesson_id: 25,
-    course_id: 3 
+    course_id: 3,
+    week_number: 18 
   },
   {
-    week_name: "fs19",
+    week_name: "full_stack_week_19",
     lesson_id: 26,
-    course_id: 3 
+    course_id: 3,
+    week_number: 19
   },
   {
-    week_name: "fs20",
+    week_name: "full_stack_week_20",
     lesson_id: 27,
-    course_id: 3 
+    course_id: 3,
+    week_number: 20
   },
   {
-    week_name: "fs21",
+    week_name: "full_stack_week_21",
     lesson_id: 28,
-    course_id: 3 
+    course_id: 3,
+    week_number: 21
   },
   {
-    week_name: "fs22",
+    week_name: "full_stack_week_22",
     lesson_id: 29,
-    course_id: 3 
+    course_id: 3,
+    week_number: 22
   },
   {
-    week_name: "fs23",
+    week_name: "full_stack_week_23",
     lesson_id: 30,
-    course_id: 3 
+    course_id: 3,
+    week_number: 23
   },
   {
-    week_name: "fs24",
+    week_name: "full_stack_week_24",
     lesson_id: 31,
-    course_id: 3 
+    course_id: 3,
+    week_number: 24
   },
   {
-    week_name: "fs25",
+    week_name: "full_stack_week_25",
     lesson_id: 31,
-    course_id: 3 
+    course_id: 3,
+    week_number: 25
   },
   {
-    week_name: "fs26",
+    week_name: "full_stack_week_26",
     lesson_id: 31,
-    course_id: 3 
+    course_id: 3,
+    week_number: 26
   }
 ])
 

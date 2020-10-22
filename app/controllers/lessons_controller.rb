@@ -16,10 +16,11 @@ class LessonsController < ApplicationController
   end
 
   def show
+    puts params
     if @current_user
       render json: {
         status: :ok,
-        lesson: Week.find_by(week_name: params["week_name"]).lesson
+        lesson: Week.find_by(week_name: "#{params["course_name"]}_week_#{params["week_number"]}").lesson
       }
     else
       render json: {
