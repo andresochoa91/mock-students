@@ -6,7 +6,7 @@ class WeeksController < ApplicationController
     if @current_user
       render json: {
         status: :ok,
-        weeks: Week.all
+        weeks: Week.where(course_id: params[:course_id])
       } 
     else
       render json: {
@@ -16,7 +16,7 @@ class WeeksController < ApplicationController
   end
 
   def show
-    if @current_user
+    if @current_user && week_params["course_id"].to_s == params[:course_id].to_s
       render json: {
         status: :ok,
         week: {
