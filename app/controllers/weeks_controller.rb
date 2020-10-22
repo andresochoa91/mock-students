@@ -10,7 +10,7 @@ class WeeksController < ApplicationController
       } 
     else
       render json: {
-        status: :unauthorized
+        status: 401
       }
     end
   end
@@ -30,7 +30,7 @@ class WeeksController < ApplicationController
       } 
     else
       render json: {
-        status: :unauthorized
+        status: 401
       }
     end
   end
