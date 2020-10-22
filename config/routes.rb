@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'lessons/index'
+  get 'lessons/show'
   get 'weeks/index'
   get 'weeks/show'
   get 'courses/index'
@@ -7,6 +9,7 @@ Rails.application.routes.draw do
   
   resources :courses, only: [:index, :show]
   resources :weeks, only: [:index, :show]
+  resources :lessons, only: [:index, :show]
 
   delete :logout, to: "sessions#logout"
   get :logged_in, to: "sessions#logged_in"
