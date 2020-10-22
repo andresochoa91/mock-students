@@ -6,7 +6,7 @@ class WeeksController < ApplicationController
     if @current_user
       render json: {
         status: :ok,
-        weeks: Week.where(course_id: params[:course_id])
+        weeks: Week.where(course_id: Course.find_by(course_name: params[:course_name]))
       } 
     else
       render json: {
@@ -16,7 +16,7 @@ class WeeksController < ApplicationController
   end
 
   def show
-    if @current_user && week_params["course_id"].to_s == params[:course_id].to_s
+    if @current_user && week_params.course["course_name"] == params[:course_name]
       render json: {
         status: :ok,
         week: {
@@ -38,7 +38,7 @@ class WeeksController < ApplicationController
   private
 
     def week_params
-      Week.find(params[:id])
+      Week.find_by(week_name: params["week_name"])
     end
 
     def lesson_params

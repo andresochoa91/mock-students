@@ -17,7 +17,7 @@ class CoursesController < ApplicationController
   def show
     if @current_user && @current_user["role"] == "Student"
       render json: {
-        course: Course.find(params[:id])
+        course: Course.find_by(course_name: params[:course_name])
       }
     else
       render json: {
