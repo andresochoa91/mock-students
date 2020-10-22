@@ -150,97 +150,97 @@ courses = Course.create([
 
 weeks = Week.create([
   {
-    week_name: "FE1",
+    week_name: "fe1",
     lesson_id: 1,
     course_id: 1  
   },
   {
-    week_name: "FE2",
+    week_name: "fe2",
     lesson_id: 2,
     course_id: 1  
   },
   {
-    week_name: "FE3",
+    week_name: "fe3",
     lesson_id: 3,
     course_id: 1  
   },
   {
-    week_name: "FE4",
+    week_name: "fe4",
     lesson_id: 4,
     course_id: 1  
   },
   {
-    week_name: "FE5",
+    week_name: "fe5",
     lesson_id: 5,
     course_id: 1  
   },
   {
-    week_name: "FE6",
+    week_name: "fe6",
     lesson_id: 6,
     course_id: 1  
   },
   {
-    week_name: "FE7",
+    week_name: "fe7",
     lesson_id: 7,
     course_id: 1  
   },
   {
-    week_name: "FE8",
+    week_name: "fe8",
     lesson_id: 8,
     course_id: 1  
   },
   {
-    week_name: "FE9",
+    week_name: "fe9",
     lesson_id: 9,
     course_id: 1  
   },
   {
-    week_name: "FE10",
+    week_name: "fe10",
     lesson_id: 10,
     course_id: 1
   },
   {
-    week_name: "FE11",
+    week_name: "fe11",
     lesson_id: 11,
     course_id: 1
   },
   {
-    week_name: "FE12",
+    week_name: "fe12",
     lesson_id: 12,
     course_id: 1
   },
   {
-    week_name: "FE13",
+    week_name: "fe13",
     lesson_id: 13,
     course_id: 1
   },
   {
-    week_name: "FE14",
+    week_name: "fe14",
     lesson_id: 14,
     course_id: 1
   },
   {
-    week_name: "FE15",
+    week_name: "fe15",
     lesson_id: 15,
     course_id: 1
   },
   {
-    week_name: "FE16",
+    week_name: "fe16",
     lesson_id: 16,
     course_id: 1
   },
   {
-    week_name: "FE17",
+    week_name: "fe17",
     lesson_id: 17,
     course_id: 1
   },
   {
-    week_name: "FE18",
+    week_name: "fe18",
     lesson_id: 18,
     course_id: 1
   },
   {
-    week_name: "FE19",
+    week_name: "fe19",
     lesson_id: 18,
     course_id: 1
   },
@@ -248,250 +248,250 @@ weeks = Week.create([
 
 
   {
-    week_name: "BE1",
+    week_name: "be1",
     lesson_id: 1,
     course_id: 2   
   },
   {
-    week_name: "BE2",
+    week_name: "be2",
     lesson_id: 2,
     course_id: 2   
   },
   {
-    week_name: "BE3",
+    week_name: "be3",
     lesson_id: 3,
     course_id: 2   
   },
   {
-    week_name: "BE4",
+    week_name: "be4",
     lesson_id: 4,
     course_id: 2   
   },
   {
-    week_name: "BE5",
+    week_name: "be5",
     lesson_id: 5,
     course_id: 2   
   },
   {
-    week_name: "BE6",
+    week_name: "be6",
     lesson_id: 6,
     course_id: 2   
   },
   {
-    week_name: "BE7",
+    week_name: "be7",
     lesson_id: 7,
     course_id: 2   
   },
   {
-    week_name: "BE8",
+    week_name: "be8",
     lesson_id: 8,
     course_id: 2   
   },
   {
-    week_name: "BE19",
+    week_name: "be9",
     lesson_id: 19,
     course_id: 2 
   },
   {
-    week_name: "BE20",
+    week_name: "be10",
     lesson_id: 20,
     course_id: 2 
   },
   {
-    week_name: "BE21",
+    week_name: "be11",
     lesson_id: 21,
     course_id: 2 
   },
   {
-    week_name: "BE22",
+    week_name: "be12",
     lesson_id: 22,
     course_id: 2 
   },
   {
-    week_name: "BE23",
+    week_name: "be13",
     lesson_id: 23,
     course_id: 2 
   },
   {
-    week_name: "BE24",
+    week_name: "be14",
     lesson_id: 24,
     course_id: 2 
   },
   {
-    week_name: "BE25",
+    week_name: "be15",
     lesson_id: 25,
     course_id: 2 
   },
   {
-    week_name: "BE26",
+    week_name: "be16",
     lesson_id: 26,
     course_id: 2 
   },
   {
-    week_name: "BE27",
+    week_name: "be17",
     lesson_id: 27,
     course_id: 2 
   },
   {
-    week_name: "BE28",
+    week_name: "be18",
     lesson_id: 28,
     course_id: 2 
   },
   {
-    week_name: "BE29",
+    week_name: "be19",
     lesson_id: 29,
     course_id: 2 
   },
   {
-    week_name: "BE30",
+    week_name: "be20",
     lesson_id: 30,
     course_id: 2 
   },
   {
-    week_name: "BE31",
+    week_name: "be21",
     lesson_id: 31,
     course_id: 2 
   },
   {
-    week_name: "BE32",
+    week_name: "be22",
     lesson_id: 31,
     course_id: 2 
   },
   {
-    week_name: "BE33",
+    week_name: "be23",
     lesson_id: 31,
     course_id: 2 
   },
 
 
-
+  
   {
-    week_name: "FS1",
+    week_name: "fs1",
     lesson_id: 9,
     course_id: 3   
   },
   {
-    week_name: "FS2",
+    week_name: "fs2",
     lesson_id: 10,
     course_id: 3 
   },
   {
-    week_name: "FS3",
+    week_name: "fs3",
     lesson_id: 11,
     course_id: 3 
   },
   {
-    week_name: "FS4",
+    week_name: "fs4",
     lesson_id: 12,
     course_id: 3 
   },
   {
-    week_name: "FS5",
+    week_name: "fs5",
     lesson_id: 13,
     course_id: 3 
   },
   {
-    week_name: "FS6",
+    week_name: "fs6",
     lesson_id: 14,
     course_id: 3 
   },
   {
-    week_name: "FS7",
+    week_name: "fs7",
     lesson_id: 15,
     course_id: 3 
   },
   {
-    week_name: "FS8",
+    week_name: "fs8",
     lesson_id: 16,
     course_id: 3 
   },
   {
-    week_name: "FS9",
+    week_name: "fs9",
     lesson_id: 17,
     course_id: 3 
   },
   {
-    week_name: "FS10",
+    week_name: "fs10",
     lesson_id: 18,
     course_id: 3 
   },
   {
-    week_name: "FS11",
+    week_name: "fs11",
     lesson_id: 18,
     course_id: 3 
   },
   {
-    week_name: "FS12",
+    week_name: "fs12",
     lesson_id: 19,
     course_id: 3 
   },
   {
-    week_name: "FS13",
+    week_name: "fs13",
     lesson_id: 20,
     course_id: 3 
   },
   {
-    week_name: "FS14",
+    week_name: "fs14",
     lesson_id: 21,
     course_id: 3 
   },
   {
-    week_name: "FS15",
+    week_name: "fs15",
     lesson_id: 22,
     course_id: 3 
   },
   {
-    week_name: "FS16",
+    week_name: "fs16",
     lesson_id: 23,
     course_id: 3 
   },
   {
-    week_name: "FS17",
+    week_name: "fs17",
     lesson_id: 24,
     course_id: 3 
   },
   {
-    week_name: "FS18",
+    week_name: "fs18",
     lesson_id: 25,
     course_id: 3 
   },
   {
-    week_name: "FS19",
+    week_name: "fs19",
     lesson_id: 26,
     course_id: 3 
   },
   {
-    week_name: "FS20",
+    week_name: "fs20",
     lesson_id: 27,
     course_id: 3 
   },
   {
-    week_name: "FS21",
+    week_name: "fs21",
     lesson_id: 28,
     course_id: 3 
   },
   {
-    week_name: "FS22",
+    week_name: "fs22",
     lesson_id: 29,
     course_id: 3 
   },
   {
-    week_name: "FS23",
+    week_name: "fs23",
     lesson_id: 30,
     course_id: 3 
   },
   {
-    week_name: "FS24",
+    week_name: "fs24",
     lesson_id: 31,
     course_id: 3 
   },
   {
-    week_name: "FS25",
+    week_name: "fs25",
     lesson_id: 31,
     course_id: 3 
   },
   {
-    week_name: "FS26",
+    week_name: "fs26",
     lesson_id: 31,
     course_id: 3 
   }

@@ -10,7 +10,7 @@ class LessonsController < ApplicationController
       } 
     else
       render json: {
-        status: :unauthorized
+        status: 401
       }
     end
   end
@@ -19,16 +19,11 @@ class LessonsController < ApplicationController
     if @current_user
       render json: {
         status: :ok,
-        lesson: {
-          id: params[:id],
-          lesson_name: Lesson.find(params[:id])["lesson_name"],
-          weeks: Lesson.find(params[:id]).weeks
-        }
-        
+        lesson: Week.find_by(week_name: params["week_name"]).lesson
       }
     else
       render json: {
-        status: :unauthorized
+        status: 401
       }
     end
   end

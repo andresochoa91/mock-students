@@ -3,10 +3,10 @@ class SourcesController < ApplicationController
   include CurrentUserConcern
 
   def index
-    if @current_user
+    if @current_user && week_params.course["course_name"] == params[:course_name]
       render json: {
         status: :ok,
-        sources: Source.all
+        sources: week_params.lesson.sources
       } 
     else
       render json: {
@@ -16,7 +16,8 @@ class SourcesController < ApplicationController
   end
 
   def show
-    if @current_user
+    if @current_user && Source.find(params["id"])
+    .lesson.weeks.find_by(week_name: params["week_name"])
       render json: {
         status: :ok,
         source: Source.find(params[:id])
@@ -27,4 +28,11 @@ class SourcesController < ApplicationController
       }
     end
   end
+
+  private
+
+    def week_params
+      Week.find_by(week_name: params["week_name"])
+    end
+
 end
