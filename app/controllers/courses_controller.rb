@@ -10,7 +10,13 @@ class CoursesController < ApplicationController
             id: course["id"],  
             course_name: course["course_name"],  
             description: course["description"],  
-            weeks: Week.where(course_id: course["id"])
+            weeks: Week.where(course_id: course["id"]).map do |week|
+              {
+                id: week["id"],
+                week_name: week["week_name"],
+                week_number: week["week_number"]
+              }
+            end
           }
         end
       }
@@ -24,7 +30,18 @@ class CoursesController < ApplicationController
   def show
     if @current_user && @current_user["role"] == "Student"
       render json: {
-        course: Course.find_by(course_name: params[:course_name])
+        course: {
+          id: course_params["id"],
+          course_name: course_params["course_name"],
+          description: course_params["description"],
+          weeks: Week.where(course_id: course_params["id"]).map do |week|
+            {
+              id: week["id"],
+              week_name: week["week_name"],
+              week_number: week["week_number"]
+            }
+          end
+        }
       }
     else
       render json: {
@@ -32,4 +49,11 @@ class CoursesController < ApplicationController
       }
     end
   end
+
+  private
+
+    def course_params
+      Course.find_by(course_name: params[:course_name])      
+    end
+
 end
