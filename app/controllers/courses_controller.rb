@@ -5,7 +5,14 @@ class CoursesController < ApplicationController
   def index
     if @current_user && @current_user["role"] == "Student"
       render json: {
-        courses: Course.all
+        courses: Course.all.map do |course|
+          { 
+            id: course["id"],  
+            course_name: course["course_name"],  
+            description: course["description"],  
+            weeks: Week.where(course_id: course["id"])
+          }
+        end
       }
     else
       render json: {

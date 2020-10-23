@@ -17,8 +17,6 @@ class WeeksController < ApplicationController
 
   def show
 
-    puts week_params
-
     if @current_user && week_params.course["course_name"] == params[:course_name] && ctd_courses.include?(params["course_name"])
 
       render json: {

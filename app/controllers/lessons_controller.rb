@@ -16,7 +16,6 @@ class LessonsController < ApplicationController
   end
 
   def show
-    puts params
     if @current_user
       render json: {
         status: :ok,

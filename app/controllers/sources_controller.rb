@@ -16,8 +16,9 @@ class SourcesController < ApplicationController
   end
 
   def show
-    if @current_user && Source.find(params["id"])
-    .lesson.weeks.find_by(week_name: params["week_name"])
+    puts params
+    if @current_user && Source.find(params["id"]).lesson.weeks.find_by(week_name: "#{params["course_name"]}_week_#{(params["week_number"]).to_s}")
+
       render json: {
         status: :ok,
         source: Source.find(params[:id])
@@ -32,7 +33,7 @@ class SourcesController < ApplicationController
   private
 
     def week_params
-      Week.find_by(week_name: params["week_name"])
+      Week.find_by(week_name: "#{params["course_name"]}_week_#{(params["week_number"]).to_s}")
     end
 
 end
