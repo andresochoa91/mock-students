@@ -12,9 +12,13 @@ class CoursesController < ApplicationController
             description: course["description"],  
             weeks: Week.where(course_id: course["id"]).map do |week|
               {
-                id: week["id"],
+                # id: week["id"],
+                week_number: week["week_number"],
                 week_name: week["week_name"],
-                week_number: week["week_number"]
+                lesson: {
+                  id: week.lesson["id"],
+                  lesson_name: week.lesson["lesson_name"]
+                }
               }
             end
           }
@@ -36,9 +40,13 @@ class CoursesController < ApplicationController
           description: course_params["description"],
           weeks: Week.where(course_id: course_params["id"]).map do |week|
             {
-              id: week["id"],
+              # id: week["id"],
+              week_number: week["week_number"],
               week_name: week["week_name"],
-              week_number: week["week_number"]
+              lesson: {
+                id: week.lesson["id"],
+                lesson_name: week.lesson["lesson_name"]
+              }
             }
           end
         }

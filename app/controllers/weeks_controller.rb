@@ -3,10 +3,24 @@ class WeeksController < ApplicationController
   include CurrentUserConcern
   
   def index    
-    if @current_user && ctd_courses.include?(params["course_name"])
+    if 
+    @current_user && 
+    ctd_courses.include?(params["course_name"])
+
       render json: {
         status: :ok,
-        weeks: Week.where(course_id: Course.find_by(course_name: params[:course_name]))
+        weeks: Week.where(course_id: Course.find_by(course_name: params[:course_name])).map do |week|
+          {
+            week_number: week["week_number"],
+            week_name: week["week_name"],
+            id: week["id"],
+            course_id: week["course_id"],
+            lesson: {
+              lesson_id: week["lesson_id"],
+              lesson_name: week.lesson["lesson_name"]
+            }
+          }
+        end
       } 
     else
       render json: {
@@ -16,8 +30,10 @@ class WeeksController < ApplicationController
   end
 
   def show
-
-    if @current_user && week_params.course["course_name"] == params[:course_name] && ctd_courses.include?(params["course_name"])
+    if 
+    @current_user && 
+    week_params.course["course_name"] == params[:course_name] && 
+    ctd_courses.include?(params["course_name"])
 
       render json: {
         status: :ok,
