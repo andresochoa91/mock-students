@@ -11,8 +11,8 @@ class WeeksController < ApplicationController
         status: :ok,
         weeks: Week.where(course_id: Course.find_by(course_name: params[:course_name])).map do |week|
           {
-            week_number: week["week_number"],
             week_name: week["week_name"],
+            week_number: week["week_number"],
             id: week["id"],
             course_id: week["course_id"],
             lesson: {
