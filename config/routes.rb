@@ -13,7 +13,7 @@ Rails.application.routes.draw do
 
   get "/courses/:course_name/weeks/:week_number/lesson/sources", to: "sources#index"
   get "/courses/:course_name/weeks/:week_number/lesson/sources/:id", to: "sources#show"
-  
+
   resources :courses, only: [:index, :show]
   resources :weeks, only: [:index, :show]
   resources :lessons, only: [:index, :show]
